@@ -13,14 +13,14 @@ pip install requests
 1. 通信監視アプリを用意  
 「Thor」と「Surge」のような、パケット監視ツールをインストールすること。  
 パソコンのパケット監視ツールを経由してネットワークに接続してもオッケーだ。  
-<img src="https://cdn.rawgit.com/fang2hou/AnoteDownloader/supportfiles/pic1.png" width="480px"/>
+<img src="https://cdn.rawgit.com/fang2hou/AnoteDownloader/supportfiles/pic1.png"/>
 
-2. パケットにあるデータを獲得  
+1. パケットにあるデータを獲得  
 監視開始後、普通に Anote アプリを利用して本を開くこと。  
 ダウンロードに必要なファイルは `https://app.anote.jp/api/v3/pageListServlet` からの応答データで、`json` で保存する。  
-<img src="https://cdn.rawgit.com/fang2hou/AnoteDownloader/supportfiles/pic2.png" width="480px"/>
+<img src="https://cdn.rawgit.com/fang2hou/AnoteDownloader/supportfiles/pic2.png"/>
 
-3. 実行  
+1. 実行  
 ```bash
 python Download.py respose.json
 ```
